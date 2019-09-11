@@ -1,9 +1,10 @@
 import React from 'react';
 
 
-import { Component } from 'react'
+import { Component,Fragment } from 'react'
 import EventDashbord from './features/event/EventDashbord/EventDashbord';
 import Navebar from './NaveBar/navebar.jsx';
+import { Container } from 'semantic-ui-react';
 
 export default class App extends Component {
 
@@ -13,11 +14,13 @@ export default class App extends Component {
   render() {
 
     return (
-      <div className="App">
+      <Fragment>
         
         <Navebar />
+        <Container className="main">
         <EventDashbord />
-      </div>
+        </Container>
+        </Fragment>
     )
   }
 }

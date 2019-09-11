@@ -11,7 +11,7 @@ export default class navebar extends Component {
        <Menu inverted fixed="top">
          <Container>
            <Menu.Item header>
-             <img src="assets/logo.png" alt="logo" />
+             <img src="https://i.ytimg.com/vi/JXlkrRe_4b0/maxresdefault.jpg" alt="logo" />
              Re-vents
            </Menu.Item>
            <Menu.Item name="Events" />
