@@ -20,23 +20,24 @@ export default class App extends Component {
 
     return (
       <Fragment>
-
-        <Navebar />
-
-
-        <Container className="main">
-          <HomePage />
-          <Route path="/events" component={EventDashbord} />
-          <Route path="/events/:id" component={EventDedatiled} />
-          <Route path="/people" component={PeopleDahsboard} />
-          <Route path="/profile/:id" component={UserDetailedPage} />
-          <Route path="/setting" component={SittingDashboard} />
-          <Route path="/createEvent" component={Eventform} />
-
-
-
-        </Container>
+           <Route exact path="/" component={HomePage} />
+        <Route
+          path="/(.+)"
+          render={() => (
+            <Fragment>
+              <Navebar />
+              <Container className="main">
+              
+                <Route path="/events" component={EventDashbord} />
+                <Route path="/events/:id" component={EventDedatiled} />
+                <Route path="/people" component={PeopleDahsboard} />
+                <Route path="/profile/:id" component={UserDetailedPage} />
+                <Route path="/Settings" component={SittingDashboard} />
+                <Route path="/createEvent" component={Eventform} />
+              </Container>
+            </Fragment>)} />
       </Fragment>
+
     )
   }
 }

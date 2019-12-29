@@ -60,6 +60,7 @@ export default class EventDashbord extends Component {
         events: events,
         isOpen: false
     }
+    
     handelIsOpentuggil = ()=>{
         this.setState((p)=>({
             isOpen: !p.isOpen
