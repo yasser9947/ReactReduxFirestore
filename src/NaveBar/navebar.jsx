@@ -21,6 +21,8 @@ export default class navebar extends Component {
            </Menu.Item>
            <Menu.Item as ={NavLink} to ="/Events" name="Events" />
            <Menu.Item as ={NavLink} to ="/people" name="people" />
+           <Menu.Item as ={NavLink} to ="/test" name="test" />
+
 
            <Menu.Item>
              <Button 

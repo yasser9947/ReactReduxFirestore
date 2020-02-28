@@ -10,10 +10,24 @@ export default class Eventform extends Component {
         venue :'' ,
         hostedBy :''
     }
+    componentDidMount(){
+        console.log(this.props.selectEvent)
+        if (this.props.selectEvent) {
+            this.setState({
+                ...this.props.selectEvent
+            })
+        }
+    }
 
     handleFormSumbmit = (evt) => {
         // evt.preventDefault();
-       this.props.creatEvent(this.state);
+        if (this.props.selectEvent){
+         
+            this.props.handleUpdateEvent(this.state)
+        }else {
+            this.props.creatEvent(this.state);
+        }
+     
         
     }
 

@@ -10,6 +10,7 @@ import { UserDetailedPage } from './user/UserDetailed/UserDetailedPage';
 import { SittingDashboard } from './user/Settings/SittingDashboard';
 import Eventform from './features/event/ِEventForm/Eventform';
 import { HomePage } from './home/HomePage';
+import TestComonent from './features/test/TestComonent';
 
 export default class App extends Component {
 
@@ -34,6 +35,8 @@ export default class App extends Component {
                 <Route path="/profile/:id" component={UserDetailedPage} />
                 <Route path="/Settings" component={SittingDashboard} />
                 <Route path="/createEvent" component={Eventform} />
+                <Route path="/test" component={TestComonent} />
+
               </Container>
             </Fragment>)} />
       </Fragment>

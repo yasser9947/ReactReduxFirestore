@@ -7,7 +7,7 @@ export default class EventList extends Component {
             <Fragment>
                 {this.props.events.map(event=>(
 
-                    <EventListItem  key={event.id} event = {event}  />
+                    <EventListItem selectEvent = {this.props.selectEvent} deletEvent = {this.props.deletEvent}  key={event.id} event = {event}  />
 
                 ))}
                
