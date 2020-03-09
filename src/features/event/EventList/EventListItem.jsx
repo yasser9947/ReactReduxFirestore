@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { Segment, Item, Icon, List, Button } from 'semantic-ui-react'
 import EventListAntbdee from './EventListAntbdee'
+import { Link } from 'react-router-dom'
 
 export default class EventListItem extends Component {
     render() {
@@ -38,7 +39,7 @@ export default class EventListItem extends Component {
                   </Segment>
                   <Segment clearing>
                       <span> {event.description} </span>
-                    <Button as="a" color="teal" floated="right" content="View " onClick = {()=> this.props.selectEvent(event)} />
+                    <Button as={Link} to = {`/events/${event.id}`} color="teal" floated="right" content="View " />
                     <Button as="a" color="teal" floated="right" content="Delete" negative onClick = {()=>this.props.deletEvent(event.id)} />
                   </Segment>
                 </Segment.Group>

@@ -19,7 +19,7 @@ export default class navebar extends Component {
              <img src="https://i.ytimg.com/vi/JXlkrRe_4b0/maxresdefault.jpg" alt="logo" />
              Re-vents
            </Menu.Item>
-           <Menu.Item as ={NavLink} to ="/Events" name="Events" />
+           <Menu.Item as ={NavLink} exact to ="/Events" name="Events" />
            <Menu.Item as ={NavLink} to ="/people" name="people" />
            <Menu.Item as ={NavLink} to ="/test" name="test" />
 

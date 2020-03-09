@@ -29,7 +29,7 @@ export default class App extends Component {
               <Navebar />
               <Container className="main">
               
-                <Route path="/events" component={EventDashbord} />
+                <Route exact path="/events" component={EventDashbord} />
                 <Route path="/events/:id" component={EventDedatiled} />
                 <Route path="/people" component={PeopleDahsboard} />
                 <Route path="/profile/:id" component={UserDetailedPage} />
